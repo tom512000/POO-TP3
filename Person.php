@@ -7,6 +7,10 @@ class Person
     private string $firstName;
     private int $age;
 
+    /**
+     * Affichage des attributs de la personne.
+     *
+     */
     public function print() : void
     {
         echo "Nom : {$this->lastName}\n";
@@ -64,7 +68,7 @@ class Person
     }
 
     /**
-     * Setteur à l'âge de la personne. Permet d’affecter un nouvel âge à la personne.
+     * Modificateur à l'âge de la personne. Permet d’affecter un nouvel âge à la personne.
      *
      * @param int $age Age de la personne
      */
@@ -74,7 +78,7 @@ class Person
     }
 
     /**
-     * Setteur au prénom de la personne. Permet d’affecter un nouveau prénom à la personne.
+     * Modificateur au prénom de la personne. Permet d’affecter un nouveau prénom à la personne.
      *
      * @param string $firstName Prénom de la personne
      */
@@ -84,7 +88,7 @@ class Person
     }
 
     /**
-     * Setteur au nom de la personne. Permet d’affecter un nouveau nom à la personne.
+     * Modificateur au nom de la personne. Permet d’affecter un nouveau nom à la personne.
      *
      * @param string $lastName Nom de la personne
      */
