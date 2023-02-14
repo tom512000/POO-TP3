@@ -81,7 +81,7 @@
 
     <article class="phpdocumentor-element -class">
         <h2 class="phpdocumentor-content__title">
-    Person
+    WeighingTicket
 
     
             <div class="phpdocumentor-element__package">
@@ -95,9 +95,9 @@
     </h2>
 
         <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Person.php"><a href="files/person.html"><abbr title="Person.php">Person.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="WeighingTicket.php"><a href="files/weighingticket.html"><abbr title="WeighingTicket.php">WeighingTicket.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">4</span>
+    <span class="phpdocumentor-element-found-in__line">5</span>
 
     </aside>
 
@@ -118,73 +118,89 @@
 
 <dl class="phpdocumentor-table-of-contents">
                         <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Person.html#method___construct">__construct()</a>
+    <a href="classes/WeighingTicket.html#method___construct">__construct()</a>
     <span>
                                 &nbsp;: mixed    </span>
 </dt>
-<dd>Constructeur de la classe Person. Ce constructeur permet d’affecter un nom, un prénom
-et un age à une personne. Lorsque ces caractéritiques ne sont pas renseignées lors de
-l’appel du contructeur, la personne aura pour nom &quot;Doe&quot;, prénom &quot;John&quot; et age 0.</dd>
+<dd>Constructeur de la classe WeighingTicket. Ce constructeur permet d’affecter un nom, un prix au kilogramme,
+un poids et un prix final à un article. Lorsque ces caractéritiques ne sont pas renseignées lors de
+l’appel du contructeur, l&#039;article aura pour nom &quot;Unknown&quot;, prix au kilogramme 0, poids 0 et prix final 0.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Person.html#method___toString">__toString()</a>
+    <a href="classes/WeighingTicket.html#method___toString">__toString()</a>
     <span>
                                 &nbsp;: string    </span>
 </dt>
-<dd>Affichage des attributs de la personne. Retourne une chaîne de caractères composée du nom, prénom et âge de
-la personne.</dd>
+<dd>Affichage des attributs de l&#039;article. Retourne un tableau composé du nom, du prix au
+kilo, du poids et du prix final de l&#039;article.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Person.html#method_getAge">getAge()</a>
+    <a href="classes/WeighingTicket.html#method_getArticleName">getArticleName()</a>
+    <span>
+                                &nbsp;: string    </span>
+</dt>
+<dd>Accesseur au nom de l&#039;article. Retourne la valeur du nom sous forme de chaîne de
+caractères.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/WeighingTicket.html#method_getPrice">getPrice()</a>
+    <span>
+                                &nbsp;: float    </span>
+</dt>
+<dd>Accesseur au prix total de l&#039;article. Retourne la valeur du poids sous forme de
+nombre à virgule.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/WeighingTicket.html#method_getPricePerKilogram">getPricePerKilogram()</a>
+    <span>
+                                &nbsp;: float    </span>
+</dt>
+<dd>Accesseur au prix au kilogramme de l&#039;article. Retourne la valeur du prix
+sous forme de nombre à virgule.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/WeighingTicket.html#method_getWeight">getWeight()</a>
     <span>
                                 &nbsp;: int    </span>
 </dt>
-<dd>Accesseur à l&#039;âge de la personne. Retourne la valeur de l&#039;âge sous forme de chaîne de
-caractères.</dd>
+<dd>Accesseur au poids de l&#039;article. Retourne la valeur du poids sous forme de nombre entier.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Person.html#method_getFirstName">getFirstName()</a>
-    <span>
-                                &nbsp;: string    </span>
-</dt>
-<dd>Accesseur au prénom de la personne. Retourne la valeur du prénom sous forme de chaîne de
-caractères.</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Person.html#method_getLastName">getLastName()</a>
-    <span>
-                                &nbsp;: string    </span>
-</dt>
-<dd>Accesseur au nom de la personne. Retourne la valeur du nom sous forme de chaîne de
-caractères.</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Person.html#method_print">print()</a>
+    <a href="classes/WeighingTicket.html#method_print">print()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
-<dd>Affichage des attributs de la personne.</dd>
+<dd>Affichage des attributs de l&#039;article.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Person.html#method_setAge">setAge()</a>
+    <a href="classes/WeighingTicket.html#method_setArticleName">setArticleName()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
-<dd>Modificateur à l&#039;âge de la personne. Permet d’affecter un nouvel âge à la personne.</dd>
+<dd>Modificateur au nom de l&#039;article. Permet d’affecter un nouveau nom à l&#039;article.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Person.html#method_setFirstName">setFirstName()</a>
+    <a href="classes/WeighingTicket.html#method_setPricePerKilogram">setPricePerKilogram()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
-<dd>Modificateur au prénom de la personne. Permet d’affecter un nouveau prénom à la personne.</dd>
+<dd>Modificateur au prix au kilo de l&#039;article. Permet d’affecter
+un nouveau prix au kilo à l&#039;article.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Person.html#method_setLastName">setLastName()</a>
+    <a href="classes/WeighingTicket.html#method_setWeight">setWeight()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
-<dd>Modificateur au nom de la personne. Permet d’affecter un nouveau nom à la personne.</dd>
+<dd>Modificateur au poids de l&#039;article. Permet d’affecter un nouveau poids à l&#039;article.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/WeighingTicket.html#method_weighing">weighing()</a>
+    <span>
+                                &nbsp;: void    </span>
+</dt>
+<dd>Méthode permettant de tirer au hasard un nombre entre 0 et 5000 et de l&#039;affecter
+à l&#039;attribut poids de l&#039;article.</dd>
 
         </dl>
 
@@ -197,7 +213,7 @@ caractères.</dd>
             <section class="phpdocumentor-methods">
         <h3 class="phpdocumentor-elements__header" id="methods">
             Methods
-            <a href="classes/Person.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
+            <a href="classes/WeighingTicket.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
         </h3>
                     <article
         class="phpdocumentor-element
@@ -207,50 +223,50 @@ caractères.</dd>
 >
     <h4 class="phpdocumentor-element__name" id="method___construct">
         __construct()
-        <a href="classes/Person.html#method___construct" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/WeighingTicket.html#method___construct" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Person.php"><a href="files/person.html"><abbr title="Person.php">Person.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="WeighingTicket.php"><a href="files/weighingticket.html"><abbr title="WeighingTicket.php">WeighingTicket.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">30</span>
+    <span class="phpdocumentor-element-found-in__line">21</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Constructeur de la classe Person. Ce constructeur permet d’affecter un nom, un prénom
-et un age à une personne. Lorsque ces caractéritiques ne sont pas renseignées lors de
-l’appel du contructeur, la personne aura pour nom &quot;Doe&quot;, prénom &quot;John&quot; et age 0.</p>
+        <p class="phpdocumentor-summary">Constructeur de la classe WeighingTicket. Ce constructeur permet d’affecter un nom, un prix au kilogramme,
+un poids et un prix final à un article. Lorsque ces caractéritiques ne sont pas renseignées lors de
+l’appel du contructeur, l&#039;article aura pour nom &quot;Unknown&quot;, prix au kilogramme 0, poids 0 et prix final 0.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$lastName</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;Doe&#039;</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$firstName</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;John&#039;</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$age</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$articleName</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;Unknown&#039;</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">float&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pricePerKilogram</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$weight</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$lastName</span>
+                <span class="phpdocumentor-signature__argument__name">$articleName</span>
                 : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">&#039;Doe&#039;</span>            </dt>
+                 = <span class="phpdocumentor-signature__argument__default-value">&#039;Unknown&#039;</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>(optional) Nom de la personne</p>
+                    <section class="phpdocumentor-description"><p>(optional) Nom de l'article</p>
 </section>
 
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$firstName</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">&#039;John&#039;</span>            </dt>
+                <span class="phpdocumentor-signature__argument__name">$pricePerKilogram</span>
+                : <span class="phpdocumentor-signature__argument__return-type">float</span>
+                            </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>(optional) Prénom de la personne</p>
+                    <section class="phpdocumentor-description"><p>(optional) Prix au kilogramme de l'article</p>
 </section>
 
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$age</span>
+                <span class="phpdocumentor-signature__argument__name">$weight</span>
                 : <span class="phpdocumentor-signature__argument__return-type">int</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>(optional) Age de la personne</p>
+                    <section class="phpdocumentor-description"><p>(optional) Poids de l'article</p>
 </section>
 
             </dd>
@@ -272,17 +288,17 @@ l’appel du contructeur, la personne aura pour nom &quot;Doe&quot;, prénom &qu
 >
     <h4 class="phpdocumentor-element__name" id="method___toString">
         __toString()
-        <a href="classes/Person.html#method___toString" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/WeighingTicket.html#method___toString" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Person.php"><a href="files/person.html"><abbr title="Person.php">Person.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="WeighingTicket.php"><a href="files/weighingticket.html"><abbr title="WeighingTicket.php">WeighingTicket.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">106</span>
+    <span class="phpdocumentor-element-found-in__line">126</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Affichage des attributs de la personne. Retourne une chaîne de caractères composée du nom, prénom et âge de
-la personne.</p>
+        <p class="phpdocumentor-summary">Affichage des attributs de l&#039;article. Retourne un tableau composé du nom, du prix au
+kilo, du poids et du prix final de l&#039;article.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
@@ -295,7 +311,7 @@ la personne.</p>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">string</span>
             &mdash;
-            <section class="phpdocumentor-description"><p>Attributs de personne</p>
+            <section class="phpdocumentor-description"><p>Attributs d'article</p>
 </section>
 
     
@@ -306,23 +322,130 @@ la personne.</p>
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_getAge">
-        getAge()
-        <a href="classes/Person.html#method_getAge" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_getArticleName">
+        getArticleName()
+        <a href="classes/WeighingTicket.html#method_getArticleName" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Person.php"><a href="files/person.html"><abbr title="Person.php">Person.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="WeighingTicket.php"><a href="files/weighingticket.html"><abbr title="WeighingTicket.php">WeighingTicket.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">65</span>
+    <span class="phpdocumentor-element-found-in__line">52</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Accesseur à l&#039;âge de la personne. Retourne la valeur de l&#039;âge sous forme de chaîne de
+        <p class="phpdocumentor-summary">Accesseur au nom de l&#039;article. Retourne la valeur du nom sous forme de chaîne de
 caractères.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">getAge</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int</span></code>
+                    <span class="phpdocumentor-signature__name">getArticleName</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+
+    
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">string</span>
+            &mdash;
+            <section class="phpdocumentor-description"><p>Nom de l'article</p>
+</section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getPrice">
+        getPrice()
+        <a href="classes/WeighingTicket.html#method_getPrice" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="WeighingTicket.php"><a href="files/weighingticket.html"><abbr title="WeighingTicket.php">WeighingTicket.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">84</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Accesseur au prix total de l&#039;article. Retourne la valeur du poids sous forme de
+nombre à virgule.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">getPrice</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">float</span></code>
+
+    
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">float</span>
+            &mdash;
+            <section class="phpdocumentor-description"><p>Prix total de l'article</p>
+</section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getPricePerKilogram">
+        getPricePerKilogram()
+        <a href="classes/WeighingTicket.html#method_getPricePerKilogram" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="WeighingTicket.php"><a href="files/weighingticket.html"><abbr title="WeighingTicket.php">WeighingTicket.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">63</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Accesseur au prix au kilogramme de l&#039;article. Retourne la valeur du prix
+sous forme de nombre à virgule.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">getPricePerKilogram</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">float</span></code>
+
+    
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">float</span>
+            &mdash;
+            <section class="phpdocumentor-description"><p>Prix au kilogramme de l'article</p>
+</section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getWeight">
+        getWeight()
+        <a href="classes/WeighingTicket.html#method_getWeight" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="WeighingTicket.php"><a href="files/weighingticket.html"><abbr title="WeighingTicket.php">WeighingTicket.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">73</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Accesseur au poids de l&#039;article. Retourne la valeur du poids sous forme de nombre entier.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">getWeight</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int</span></code>
 
     
     
@@ -331,79 +454,7 @@ caractères.</p>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">int</span>
             &mdash;
-            <section class="phpdocumentor-description"><p>Age de la personne</p>
-</section>
-
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_getFirstName">
-        getFirstName()
-        <a href="classes/Person.html#method_getFirstName" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Person.php"><a href="files/person.html"><abbr title="Person.php">Person.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">54</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">Accesseur au prénom de la personne. Retourne la valeur du prénom sous forme de chaîne de
-caractères.</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">getFirstName</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
-
-    
-    
-    
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">string</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>Prénom de la personne</p>
-</section>
-
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_getLastName">
-        getLastName()
-        <a href="classes/Person.html#method_getLastName" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Person.php"><a href="files/person.html"><abbr title="Person.php">Person.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">43</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">Accesseur au nom de la personne. Retourne la valeur du nom sous forme de chaîne de
-caractères.</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">getLastName</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
-
-    
-    
-    
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">string</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>Nom de la personne</p>
+            <section class="phpdocumentor-description"><p>Poids de l'article</p>
 </section>
 
     
@@ -416,16 +467,16 @@ caractères.</p>
 >
     <h4 class="phpdocumentor-element__name" id="method_print">
         print()
-        <a href="classes/Person.html#method_print" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/WeighingTicket.html#method_print" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Person.php"><a href="files/person.html"><abbr title="Person.php">Person.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="WeighingTicket.php"><a href="files/weighingticket.html"><abbr title="WeighingTicket.php">WeighingTicket.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">14</span>
+    <span class="phpdocumentor-element-found-in__line">38</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Affichage des attributs de la personne.</p>
+        <p class="phpdocumentor-summary">Affichage des attributs de l&#039;article.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
@@ -447,32 +498,123 @@ caractères.</p>
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_setAge">
-        setAge()
-        <a href="classes/Person.html#method_setAge" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_setArticleName">
+        setArticleName()
+        <a href="classes/WeighingTicket.html#method_setArticleName" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Person.php"><a href="files/person.html"><abbr title="Person.php">Person.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="WeighingTicket.php"><a href="files/weighingticket.html"><abbr title="WeighingTicket.php">WeighingTicket.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">75</span>
+    <span class="phpdocumentor-element-found-in__line">94</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Modificateur à l&#039;âge de la personne. Permet d’affecter un nouvel âge à la personne.</p>
+        <p class="phpdocumentor-summary">Modificateur au nom de l&#039;article. Permet d’affecter un nouveau nom à l&#039;article.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">setAge</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$age</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+                    <span class="phpdocumentor-signature__name">setArticleName</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$articleName</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$age</span>
+                <span class="phpdocumentor-signature__argument__name">$articleName</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>Nom de l'article</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">void</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_setPricePerKilogram">
+        setPricePerKilogram()
+        <a href="classes/WeighingTicket.html#method_setPricePerKilogram" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="WeighingTicket.php"><a href="files/weighingticket.html"><abbr title="WeighingTicket.php">WeighingTicket.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">105</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Modificateur au prix au kilo de l&#039;article. Permet d’affecter
+un nouveau prix au kilo à l&#039;article.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">setPricePerKilogram</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">float&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pricePerKilogram</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$pricePerKilogram</span>
+                : <span class="phpdocumentor-signature__argument__return-type">float</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>Prix au kilo de l'article</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">void</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_setWeight">
+        setWeight()
+        <a href="classes/WeighingTicket.html#method_setWeight" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="WeighingTicket.php"><a href="files/weighingticket.html"><abbr title="WeighingTicket.php">WeighingTicket.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">115</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Modificateur au poids de l&#039;article. Permet d’affecter un nouveau poids à l&#039;article.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">setWeight</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$weight</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$weight</span>
                 : <span class="phpdocumentor-signature__argument__return-type">int</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>Age de la personne</p>
+                    <section class="phpdocumentor-description"><p>Poids de l'article</p>
 </section>
 
             </dd>
@@ -492,82 +634,26 @@ caractères.</p>
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_setFirstName">
-        setFirstName()
-        <a href="classes/Person.html#method_setFirstName" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_weighing">
+        weighing()
+        <a href="classes/WeighingTicket.html#method_weighing" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Person.php"><a href="files/person.html"><abbr title="Person.php">Person.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="WeighingTicket.php"><a href="files/weighingticket.html"><abbr title="WeighingTicket.php">WeighingTicket.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">85</span>
+    <span class="phpdocumentor-element-found-in__line">142</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Modificateur au prénom de la personne. Permet d’affecter un nouveau prénom à la personne.</p>
+        <p class="phpdocumentor-summary">Méthode permettant de tirer au hasard un nombre entre 0 et 5000 et de l&#039;affecter
+à l&#039;attribut poids de l&#039;article.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">setFirstName</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$firstName</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+                    <span class="phpdocumentor-signature__name">weighing</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
     
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$firstName</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>Prénom de la personne</p>
-</section>
-
-            </dd>
-            </dl>
-
     
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">void</span>
-            &mdash;
-        
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_setLastName">
-        setLastName()
-        <a href="classes/Person.html#method_setLastName" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Person.php"><a href="files/person.html"><abbr title="Person.php">Person.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">95</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">Modificateur au nom de la personne. Permet d’affecter un nouveau nom à la personne.</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">setLastName</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$lastName</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
-
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$lastName</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>Nom de la personne</p>
-</section>
-
-            </dd>
-            </dl>
-
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
@@ -654,7 +740,7 @@ caractères.</p>
 </section>
             </div>
         </div>
-        <a href="classes/Person.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+        <a href="classes/WeighingTicket.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
 
     </main>
 

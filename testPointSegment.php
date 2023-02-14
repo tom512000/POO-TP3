@@ -28,3 +28,28 @@ $segment1 = new Segment( $origine , $destination);
 
 # Question 14
 echo "$segment1\n";
+
+# Question 15
+echo "$segment1\n";
+$pointDebut = $segment1->getStart();
+echo "$pointDebut\n";
+$pointDebut->translation(2.,3.);
+echo "$pointDebut\n";
+echo "$segment1\n";
+# L'instance start de l'objet segment1 a bien été modifiée.
+# Grace à la méthode clone, l'instance de l'objet ne peut pas être modifié.
+
+# Question 16
+echo "$segment1\n";
+$segment1->setStart($pointDebut);
+echo "$segment1\n";
+
+# Question 17
+echo $segment1."\n";
+$segment1 -> translation(10, 10);
+echo $segment1."\n";
+
+# Question 18
+echo "{$segment1->getLength()}\n";
+
+# Question 19

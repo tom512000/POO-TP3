@@ -1,55 +1,30 @@
 Search.appendIndex(
     [
                 {
-            "fqsen": "\\Person",
-            "name": "Person",
+            "fqsen": "\\Segment",
+            "name": "Segment",
             "summary": "",
-            "url": "classes/Person.html"
+            "url": "classes/Segment.html"
         },                {
-            "fqsen": "\\Person\u003A\u003Aprint\u0028\u0029",
-            "name": "print",
-            "summary": "",
-            "url": "classes/Person.html#method_print"
-        },                {
-            "fqsen": "\\Person\u003A\u003A__construct\u0028\u0029",
+            "fqsen": "\\Segment\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "Constructeur\u0020de\u0020la\u0020classe\u0020Person.\u0020Ce\u0020constructeur\u0020permet\u0020d\u2019affecter\u0020un\u0020nom,\u0020un\u0020pr\u00E9nom\net\u0020un\u0020age\u0020\u00E0\u0020une\u0020personne.\u0020Lorsque\u0020ces\u0020caract\u00E9ritiques\u0020ne\u0020sont\u0020pas\u0020renseign\u00E9es\u0020lors\u0020de\nl\u2019appel\u0020du\u0020contructeur,\u0020la\u0020personne\u0020aura\u0020pour\u0020nom\u0020\u0022Doe\u0022,\u0020pr\u00E9nom\u0020\u0022John\u0022\u0020et\u0020age\u00200.",
-            "url": "classes/Person.html#method___construct"
+            "summary": "Constructeur\u0020de\u0020la\u0020classe\u0020Segment.\u0020Ce\u0020constructeur\u0020permet\u0020d\u2019affecter\u0020une\u0020instance\nde\u0020la\u0020classe\u0020Point\u0020pour\u0020son\u0020origine\u0020et\u0020sa\u0020destination.",
+            "url": "classes/Segment.html#method___construct"
         },                {
-            "fqsen": "\\Person\u003A\u003AgetLastName\u0028\u0029",
-            "name": "getLastName",
-            "summary": "Accesseur\u0020au\u0020nom\u0020de\u0020la\u0020personne.\u0020Retourne\u0020la\u0020valeur\u0020du\u0020nom\u0020sous\u0020forme\u0020de\u0020cha\u00EEne\u0020de\ncaract\u00E8res.",
-            "url": "classes/Person.html#method_getLastName"
-        },                {
-            "fqsen": "\\Person\u003A\u003AgetFirstName\u0028\u0029",
-            "name": "getFirstName",
-            "summary": "Accesseur\u0020au\u0020pr\u00E9nom\u0020de\u0020la\u0020personne.\u0020Retourne\u0020la\u0020valeur\u0020du\u0020pr\u00E9nom\u0020sous\u0020forme\u0020de\u0020cha\u00EEne\u0020de\ncaract\u00E8res.",
-            "url": "classes/Person.html#method_getFirstName"
-        },                {
-            "fqsen": "\\Person\u003A\u003AgetAge\u0028\u0029",
-            "name": "getAge",
-            "summary": "Accesseur\u0020\u00E0\u0020l\u0027\u00E2ge\u0020de\u0020la\u0020personne.\u0020Retourne\u0020la\u0020valeur\u0020de\u0020l\u0027\u00E2ge\u0020sous\u0020forme\u0020de\u0020cha\u00EEne\u0020de\ncaract\u00E8res.",
-            "url": "classes/Person.html#method_getAge"
-        },                {
-            "fqsen": "\\Person\u003A\u003AsetAge\u0028\u0029",
-            "name": "setAge",
-            "summary": "Setteur\u0020\u00E0\u0020l\u0027\u00E2ge\u0020de\u0020la\u0020personne.\u0020Permet\u0020d\u2019affecter\u0020un\u0020nouvel\u0020\u00E2ge\u0020\u00E0\u0020la\u0020personne.",
-            "url": "classes/Person.html#method_setAge"
-        },                {
-            "fqsen": "\\Person\u003A\u003AsetFirstName\u0028\u0029",
-            "name": "setFirstName",
-            "summary": "Setteur\u0020au\u0020pr\u00E9nom\u0020de\u0020la\u0020personne.\u0020Permet\u0020d\u2019affecter\u0020un\u0020nouveau\u0020pr\u00E9nom\u0020\u00E0\u0020la\u0020personne.",
-            "url": "classes/Person.html#method_setFirstName"
-        },                {
-            "fqsen": "\\Person\u003A\u003AsetLastName\u0028\u0029",
-            "name": "setLastName",
-            "summary": "Setteur\u0020au\u0020nom\u0020de\u0020la\u0020personne.\u0020Permet\u0020d\u2019affecter\u0020un\u0020nouveau\u0020nom\u0020\u00E0\u0020la\u0020personne.",
-            "url": "classes/Person.html#method_setLastName"
-        },                {
-            "fqsen": "\\Person\u003A\u003A__toString\u0028\u0029",
+            "fqsen": "\\Segment\u003A\u003A__toString\u0028\u0029",
             "name": "__toString",
-            "summary": "Affichage\u0020des\u0020attributs\u0020de\u0020la\u0020personne.\u0020Retourne\u0020une\u0020cha\u00EEne\u0020de\u0020caract\u00E8res\u0020compos\u00E9e\u0020du\u0020nom,\u0020pr\u00E9nom\u0020et\u0020\u00E2ge\u0020de\nla\u0020personne.",
-            "url": "classes/Person.html#method___toString"
+            "summary": "Affichage\u0020des\u0020attributs\u0020du\u0020point.\u0020Retourne\u0020une\u0020cha\u00EEne\u0020de\u0020caract\u00E8res\u0020compos\u00E9e\nde\u0020la\u0020coordonn\u00E9e\u0020x\u0020et\u0020la\u0020coordonn\u00E9e\u0020y\u0020du\u0020point.",
+            "url": "classes/Segment.html#method___toString"
+        },                {
+            "fqsen": "\\Segment\u003A\u003AgetStart\u0028\u0029",
+            "name": "getStart",
+            "summary": "Accesseur\u0020\u00E0\u0020l\u0027instance\u0020start\u0020du\u0020Point.\u0020Retourne\u0020la\u0020valeur\u0020de\u0020l\u0027instance\u0020start\nsous\u0020forme\u0020de\u0020Classe\u0020Point.",
+            "url": "classes/Segment.html#method_getStart"
+        },                {
+            "fqsen": "\\Segment\u003A\u003AsetStart\u0028\u0029",
+            "name": "setStart",
+            "summary": "Modificateur\u0020\u00E0\u0020l\u0027instance\u0020start\u0020du\u0020Point.\u0020Permet\u0020d\u2019affecter\u0020une\u0020nouvelle\u0020instance\u0020start\u0020au\u0020Point.",
+            "url": "classes/Segment.html#method_setStart"
         },                {
             "fqsen": "\\",
             "name": "\\",
