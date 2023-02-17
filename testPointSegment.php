@@ -24,7 +24,7 @@ $destination -> translation(10, 10);
 echo $destination."\n";
 
 # Question 13
-$segment1 = new Segment( $origine , $destination);
+$segment1 = new Segment($origine, $destination);
 
 # Question 14
 echo "$segment1\n";
@@ -50,6 +50,18 @@ $segment1 -> translation(10, 10);
 echo $segment1."\n";
 
 # Question 18
-echo "{$segment1->getLength()}\n";
+echo $segment1->getLength()."\n";
 
 # Question 19
+$origine2 = new Point( 6.5, 1.7 );
+$destination2 = new Point( 3.5, 2.0 );
+$segment2 = new Segment($origine2, $destination2);
+echo $segment1->isLongerThan($segment2)."\n";
+
+# Question 20
+echo $segment1->isEqual($segment2)."\n";
+
+# Question 21
+$copieOrigine = clone $origine;
+echo $copieOrigine."\n";
+echo $origine."\n";

@@ -118,6 +118,13 @@
 
 <dl class="phpdocumentor-table-of-contents">
                         <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Segment.html#method___clone">__clone()</a>
+    <span>
+                                &nbsp;: mixed    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Segment.html#method___construct">__construct()</a>
     <span>
                                 &nbsp;: mixed    </span>
@@ -134,6 +141,22 @@ de la classe Point pour son origine et sa destination.</dd>
 de la coordonnée x et la coordonnée y du point.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Segment.html#method_getEnd">getEnd()</a>
+    <span>
+                                &nbsp;: <abbr title="\Point">Point</abbr>    </span>
+</dt>
+<dd>Accesseur à l&#039;instance end du Point. Retourne la valeur de l&#039;instance end
+sous forme de Classe Point.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Segment.html#method_getLength">getLength()</a>
+    <span>
+                                &nbsp;: float    </span>
+</dt>
+<dd>Accesseur à la distance entre les deux objets Point du Segment. Retourne la valeur de cette distance
+sous forme de nombre réel.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Segment.html#method_getStart">getStart()</a>
     <span>
                                 &nbsp;: <abbr title="\Point">Point</abbr>    </span>
@@ -142,11 +165,42 @@ de la coordonnée x et la coordonnée y du point.</dd>
 sous forme de Classe Point.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Segment.html#method_isEqual">isEqual()</a>
+    <span>
+                                &nbsp;: bool    </span>
+</dt>
+<dd>Méthode permettant de vérifier l&#039;égalité entre les instances de la classe Point des
+instances de la classe Segment qui appelle la méthode et l&#039;instance de la classe
+Segment en paramètre.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Segment.html#method_isLongerThan">isLongerThan()</a>
+    <span>
+                                &nbsp;: bool    </span>
+</dt>
+<dd>Méthode permettant de vérifier si l&#039;instance de la classe Segment qui appelle
+la méthode est plus grand que l&#039;instance de la classe Segment en paramètre.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Segment.html#method_setEnd">setEnd()</a>
+    <span>
+                                &nbsp;: void    </span>
+</dt>
+<dd>Modificateur à l&#039;instance end du Point. Permet d’affecter une nouvelle instance end au Point.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Segment.html#method_setStart">setStart()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
 <dd>Modificateur à l&#039;instance start du Point. Permet d’affecter une nouvelle instance start au Point.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Segment.html#method_translation">translation()</a>
+    <span>
+                                &nbsp;: void    </span>
+</dt>
+<dd>Méthode permettant de modifier les coordonnées x et y des deux objets de classe Point.</dd>
 
         </dl>
 
@@ -161,6 +215,39 @@ sous forme de Classe Point.</dd>
             Methods
             <a href="classes/Segment.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
         </h3>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method___clone">
+        __clone()
+        <a href="classes/Segment.html#method___clone" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="Segment.php"><a href="files/segment.html"><abbr title="Segment.php">Segment.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">130</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">__clone</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">mixed</span>
+            &mdash;
+        
+    
+</article>
                     <article
         class="phpdocumentor-element
             -method
@@ -258,6 +345,78 @@ de la coordonnée x et la coordonnée y du point.</p>
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_getEnd">
+        getEnd()
+        <a href="classes/Segment.html#method_getEnd" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="Segment.php"><a href="files/segment.html"><abbr title="Segment.php">Segment.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">51</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Accesseur à l&#039;instance end du Point. Retourne la valeur de l&#039;instance end
+sous forme de Classe Point.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">getEnd</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Point">Point</abbr></span></code>
+
+    
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type"><abbr title="\Point">Point</abbr></span>
+            &mdash;
+            <section class="phpdocumentor-description"><p>Instance start du Point</p>
+</section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getLength">
+        getLength()
+        <a href="classes/Segment.html#method_getLength" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="Segment.php"><a href="files/segment.html"><abbr title="Segment.php">Segment.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">94</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Accesseur à la distance entre les deux objets Point du Segment. Retourne la valeur de cette distance
+sous forme de nombre réel.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">getLength</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">float</span></code>
+
+    
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">float</span>
+            &mdash;
+            <section class="phpdocumentor-description"><p>Distance entre les deux objets Point</p>
+</section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_getStart">
         getStart()
         <a href="classes/Segment.html#method_getStart" class="headerlink"><i class="fas fa-link"></i></a>
@@ -294,6 +453,144 @@ sous forme de Classe Point.</p>
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_isEqual">
+        isEqual()
+        <a href="classes/Segment.html#method_isEqual" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="Segment.php"><a href="files/segment.html"><abbr title="Segment.php">Segment.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">121</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Méthode permettant de vérifier l&#039;égalité entre les instances de la classe Point des
+instances de la classe Segment qui appelle la méthode et l&#039;instance de la classe
+Segment en paramètre.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">isEqual</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Segment.html"><abbr title="\Segment">Segment</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$segment2</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$segment2</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Segment.html"><abbr title="\Segment">Segment</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>(optional) Instance de la classe Segment</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">bool</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_isLongerThan">
+        isLongerThan()
+        <a href="classes/Segment.html#method_isLongerThan" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="Segment.php"><a href="files/segment.html"><abbr title="Segment.php">Segment.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">105</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Méthode permettant de vérifier si l&#039;instance de la classe Segment qui appelle
+la méthode est plus grand que l&#039;instance de la classe Segment en paramètre.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">isLongerThan</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Segment.html"><abbr title="\Segment">Segment</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$segment2</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$segment2</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Segment.html"><abbr title="\Segment">Segment</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>(optional) Instance de la classe Segment</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">bool</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_setEnd">
+        setEnd()
+        <a href="classes/Segment.html#method_setEnd" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="Segment.php"><a href="files/segment.html"><abbr title="Segment.php">Segment.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">71</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Modificateur à l&#039;instance end du Point. Permet d’affecter une nouvelle instance end au Point.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">setEnd</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Point">Point</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$end</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$end</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\Point">Point</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>Instance end du Point</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">void</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_setStart">
         setStart()
         <a href="classes/Segment.html#method_setStart" class="headerlink"><i class="fas fa-link"></i></a>
@@ -301,7 +598,7 @@ sous forme de Classe Point.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Segment.php"><a href="files/segment.html"><abbr title="Segment.php">Segment.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">50</span>
+    <span class="phpdocumentor-element-found-in__line">61</span>
 
     </aside>
 
@@ -320,6 +617,60 @@ sous forme de Classe Point.</p>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"><p>Instance start du Point</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">void</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_translation">
+        translation()
+        <a href="classes/Segment.html#method_translation" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="Segment.php"><a href="files/segment.html"><abbr title="Segment.php">Segment.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">82</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Méthode permettant de modifier les coordonnées x et y des deux objets de classe Point.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">translation</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">float&nbsp;</span><span class="phpdocumentor-signature__argument__name">$dx</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">float&nbsp;</span><span class="phpdocumentor-signature__argument__name">$dy</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$dx</span>
+                : <span class="phpdocumentor-signature__argument__return-type">float</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>(optional) Coordonnée x du point</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$dy</span>
+                : <span class="phpdocumentor-signature__argument__return-type">float</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>(optional) Coordonnée y du point</p>
 </section>
 
             </dd>

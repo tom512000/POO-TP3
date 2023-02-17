@@ -21,10 +21,45 @@ Search.appendIndex(
             "summary": "Accesseur\u0020\u00E0\u0020l\u0027instance\u0020start\u0020du\u0020Point.\u0020Retourne\u0020la\u0020valeur\u0020de\u0020l\u0027instance\u0020start\nsous\u0020forme\u0020de\u0020Classe\u0020Point.",
             "url": "classes/Segment.html#method_getStart"
         },                {
+            "fqsen": "\\Segment\u003A\u003AgetEnd\u0028\u0029",
+            "name": "getEnd",
+            "summary": "Accesseur\u0020\u00E0\u0020l\u0027instance\u0020end\u0020du\u0020Point.\u0020Retourne\u0020la\u0020valeur\u0020de\u0020l\u0027instance\u0020end\nsous\u0020forme\u0020de\u0020Classe\u0020Point.",
+            "url": "classes/Segment.html#method_getEnd"
+        },                {
             "fqsen": "\\Segment\u003A\u003AsetStart\u0028\u0029",
             "name": "setStart",
             "summary": "Modificateur\u0020\u00E0\u0020l\u0027instance\u0020start\u0020du\u0020Point.\u0020Permet\u0020d\u2019affecter\u0020une\u0020nouvelle\u0020instance\u0020start\u0020au\u0020Point.",
             "url": "classes/Segment.html#method_setStart"
+        },                {
+            "fqsen": "\\Segment\u003A\u003AsetEnd\u0028\u0029",
+            "name": "setEnd",
+            "summary": "Modificateur\u0020\u00E0\u0020l\u0027instance\u0020end\u0020du\u0020Point.\u0020Permet\u0020d\u2019affecter\u0020une\u0020nouvelle\u0020instance\u0020end\u0020au\u0020Point.",
+            "url": "classes/Segment.html#method_setEnd"
+        },                {
+            "fqsen": "\\Segment\u003A\u003Atranslation\u0028\u0029",
+            "name": "translation",
+            "summary": "M\u00E9thode\u0020permettant\u0020de\u0020modifier\u0020les\u0020coordonn\u00E9es\u0020x\u0020et\u0020y\u0020des\u0020deux\u0020objets\u0020de\u0020classe\u0020Point.",
+            "url": "classes/Segment.html#method_translation"
+        },                {
+            "fqsen": "\\Segment\u003A\u003AgetLength\u0028\u0029",
+            "name": "getLength",
+            "summary": "Accesseur\u0020\u00E0\u0020la\u0020distance\u0020entre\u0020les\u0020deux\u0020objets\u0020Point\u0020du\u0020Segment.\u0020Retourne\u0020la\u0020valeur\u0020de\u0020cette\u0020distance\nsous\u0020forme\u0020de\u0020nombre\u0020r\u00E9el.",
+            "url": "classes/Segment.html#method_getLength"
+        },                {
+            "fqsen": "\\Segment\u003A\u003AisLongerThan\u0028\u0029",
+            "name": "isLongerThan",
+            "summary": "M\u00E9thode\u0020permettant\u0020de\u0020v\u00E9rifier\u0020si\u0020l\u0027instance\u0020de\u0020la\u0020classe\u0020Segment\u0020qui\u0020appelle\nla\u0020m\u00E9thode\u0020est\u0020plus\u0020grand\u0020que\u0020l\u0027instance\u0020de\u0020la\u0020classe\u0020Segment\u0020en\u0020param\u00E8tre.",
+            "url": "classes/Segment.html#method_isLongerThan"
+        },                {
+            "fqsen": "\\Segment\u003A\u003AisEqual\u0028\u0029",
+            "name": "isEqual",
+            "summary": "M\u00E9thode\u0020permettant\u0020de\u0020v\u00E9rifier\u0020l\u0027\u00E9galit\u00E9\u0020entre\u0020les\u0020instances\u0020de\u0020la\u0020classe\u0020Point\u0020des\ninstances\u0020de\u0020la\u0020classe\u0020Segment\u0020qui\u0020appelle\u0020la\u0020m\u00E9thode\u0020et\u0020l\u0027instance\u0020de\u0020la\u0020classe\nSegment\u0020en\u0020param\u00E8tre.",
+            "url": "classes/Segment.html#method_isEqual"
+        },                {
+            "fqsen": "\\Segment\u003A\u003A__clone\u0028\u0029",
+            "name": "__clone",
+            "summary": "",
+            "url": "classes/Segment.html#method___clone"
         },                {
             "fqsen": "\\",
             "name": "\\",

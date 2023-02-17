@@ -16,8 +16,8 @@ class Segment
      */
     public function __construct (Point $start, Point $end)
     {
-        $this->start = $start;
-        $this->end = $end;
+        $this->start = clone $start;
+        $this->end = clone $end;
     }
 
     /**
@@ -37,9 +37,20 @@ class Segment
      *
      * @return Point Instance start du Point
      */
-    public function getStart () : Point
+    public function getStart() : Point
     {
-        return clone $this->start ;
+        return clone $this->start;
+    }
+
+    /**
+     * Accesseur à l'instance end du Point. Retourne la valeur de l'instance end
+     * sous forme de Classe Point.
+     *
+     * @return Point Instance start du Point
+     */
+    public function getEnd() : Point
+    {
+        return clone $this->end ;
     }
 
     /**
@@ -50,6 +61,16 @@ class Segment
     public function setStart(Point $start) : void
     {
         $this->start = clone $start;
+    }
+
+    /**
+     * Modificateur à l'instance end du Point. Permet d’affecter une nouvelle instance end au Point.
+     *
+     * @param Point $end Instance end du Point
+     */
+    public function setEnd(Point $end) : void
+    {
+        $this->end = clone $end;
     }
 
     /**
@@ -75,10 +96,40 @@ class Segment
         return round(sqrt((($this->end -> getX() - $this->start -> getX())**2) + (($this->end -> getY() - $this->start -> getY())**2)), 2);
     }
 
+    /**
+     * Méthode permettant de vérifier si l'instance de la classe Segment qui appelle
+     * la méthode est plus grand que l'instance de la classe Segment en paramètre.
+     *
+     * @param Segment $segment2 (optional) Instance de la classe Segment
+     */
     public function isLongerThan(Segment $segment2) : bool
     {
         $res = false;
-        if ($this->getLength() > $segment->getLength()):
+        if ($this->getLength() > $segment2->getLength()) {
+            $res = true;
+        }
+        return $res;
+    }
 
+    /**
+     * Méthode permettant de vérifier l'égalité entre les instances de la classe Point des
+     * instances de la classe Segment qui appelle la méthode et l'instance de la classe
+     * Segment en paramètre.
+     *
+     * @param Segment $segment2 (optional) Instance de la classe Segment
+     */
+    public function isEqual(Segment $segment2) : bool
+    {
+        $res = false;
+        if ((($this->start == $segment2->start) && ($this->end == $segment2->end)) || (($this->start == $segment2->end) && ($this->end == $segment2->start))) {
+            $res = true;
+        }
+        return $res;
+    }
+
+    public function __clone()
+    {
+        $this->start = clone $this->start;
+        $this->end = clone $this->end;
     }
 }

@@ -48,3 +48,7 @@ echo "$inconnu\n";
 # Question 6
 # La méthode weighing permet de tirer au hasard un nombre entre 0 et 5000, elle affecte
 # ce nombre à l'attribut weight de l'objet qui utilise cette méthode.
+$inconnu2 = new WeighingTicket;
+echo "{$inconnu2->getWeight()}\n";
+$inconnu2->weighing();
+echo "{$inconnu2->getWeight()}\n";
