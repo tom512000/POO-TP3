@@ -127,6 +127,7 @@ class Segment
         return $res;
     }
 
+
     public function __clone()
     {
         $this->start = clone $this->start;
