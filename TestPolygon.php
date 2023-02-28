@@ -1,6 +1,7 @@
 <?php
 declare(strict_types=1);
 require_once "Point.php";
+require_once "Segment.php";
 require_once "Polygon.php";
 
 # Question 1
@@ -17,3 +18,4 @@ echo $polygon->getVerticesNumber();
 echo $polygon->isEmpty();
 
 # Question 4
+echo $polygon->getPerimeter();

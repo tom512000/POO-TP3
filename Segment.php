@@ -127,7 +127,9 @@ class Segment
         return $res;
     }
 
-
+    /**
+     * Méthode permettant de cloner les attributs start et end d'une instance de classe segment.
+     */
     public function __clone()
     {
         $this->start = clone $this->start;
