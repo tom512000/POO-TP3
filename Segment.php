@@ -128,7 +128,7 @@ class Segment
     }
 
     /**
-     * Méthode permettant de cloner les attributs start et end d'une instance de classe segment.
+     * Méthode permettant de cloner les attributs start et end d'une instance de classe Segment.
      */
     public function __clone()
     {

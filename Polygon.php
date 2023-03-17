@@ -1,7 +1,5 @@
 <?php
 declare(strict_types=1);
-require_once "Point.php";
-require_once "Segment.php";
 
 class Polygon
 {
@@ -39,6 +37,20 @@ class Polygon
         $res = false;
         if ($this->getVerticesNumber() == 0) {
             $res = true;
+        }
+        return $res;
+    }
+
+    /**
+     * Méthode permettant de donner le périmètre total du polygone.
+     *
+     */
+    public function getPerimeter() : int
+    {
+        $res = 0;
+        $array = $this->vertices;
+        foreach ($array as $value) {
+            $res += round(sqrt((($value->end -> getX() - $value->start -> getX())**2) + (($value->end -> getY() - $value->start -> getY())**2)), 2);
         }
         return $res;
     }
