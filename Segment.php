@@ -1,5 +1,7 @@
 <?php
+
 declare(strict_types=1);
+
 require_once "Point.php";
 
 class Segment
@@ -8,11 +10,10 @@ class Segment
     private Point $end;
 
     /**
-     * Constructeur de la classe Segment. Ce constructeur permet d’affecter une instance
-     * de la classe Point pour son origine et sa destination.
+     * Constructeur de Segment.
      *
-     * @param Point $start (optional) Point de départ
-     * @param Point $end (optional) Point d'arrivée
+     * @param Point $start Le point de départ du segment.
+     * @param Point $end Le point d'arrivée du segment.
      */
     public function __construct (Point $start, Point $end)
     {
@@ -21,21 +22,9 @@ class Segment
     }
 
     /**
-     * Affichage des attributs du point. Retourne une chaîne de caractères composée
-     * de la coordonnée x et la coordonnée y du point.
+     * Accesseur de la classe Segment.
      *
-     * @return string Attributs du point
-     */
-    public function __toString() : string
-    {
-        return "[ $this->start - $this->end ]\n";
-    }
-
-    /**
-     * Accesseur à l'instance start du Point. Retourne la valeur de l'instance start
-     * sous forme de Classe Point.
-     *
-     * @return Point Instance start du Point
+     * @return Point Le point de départ du segment.
      */
     public function getStart() : Point
     {
@@ -43,20 +32,9 @@ class Segment
     }
 
     /**
-     * Accesseur à l'instance end du Point. Retourne la valeur de l'instance end
-     * sous forme de Classe Point.
+     * Modificateur de la classe Segment.
      *
-     * @return Point Instance start du Point
-     */
-    public function getEnd() : Point
-    {
-        return clone $this->end ;
-    }
-
-    /**
-     * Modificateur à l'instance start du Point. Permet d’affecter une nouvelle instance start au Point.
-     *
-     * @param Point $start Instance start du Point
+     * @param Point $start Le point de départ du segment.
      */
     public function setStart(Point $start) : void
     {
@@ -64,9 +42,19 @@ class Segment
     }
 
     /**
-     * Modificateur à l'instance end du Point. Permet d’affecter une nouvelle instance end au Point.
+     * Accesseur de la classe Segment.
      *
-     * @param Point $end Instance end du Point
+     * @return Point Le point d'arrivée du segment.
+     */
+    public function getEnd() : Point
+    {
+        return clone $this->end ;
+    }
+
+    /**
+     * Modificateur de la classe Segment.
+     *
+     * @param Point $end Le point d'arrivée du segment.
      */
     public function setEnd(Point $end) : void
     {
@@ -74,33 +62,32 @@ class Segment
     }
 
     /**
-     * Méthode permettant de modifier les coordonnées x et y des deux objets de classe Point.
+     * Effectue une translation du segment en déplaçant ses points de départ et d'arrivée.
      *
-     * @param float $dx (optional) Coordonnée x du point
-     * @param float $dy (optional) Coordonnée y du point
+     * @param float $dx La distance de translation en abscisse.
+     * @param float $dy La distance de translation en ordonnée.
      */
     public function translation(float $dx, float $dy) : void
     {
-        $this->start -> translation($dx,$dy);
-        $this->end -> translation($dx,$dy);
+        $this->start->translation($dx,$dy);
+        $this->end->translation($dx,$dy);
     }
 
     /**
-     * Accesseur à la distance entre les deux objets Point du Segment. Retourne la valeur de cette distance
-     * sous forme de nombre réel.
+     * Calcule la longueur du segment.
      *
-     * @return float Distance entre les deux objets Point
+     * @return float La longueur du segment.
      */
     public function getLength() : float
     {
-        return round(sqrt((($this->end -> getX() - $this->start -> getX())**2) + (($this->end -> getY() - $this->start -> getY())**2)), 2);
+        return round(sqrt((($this->end->getX() - $this->start->getX())**2) + (($this->end -> getY() - $this->start -> getY())**2)), 2);
     }
 
     /**
-     * Méthode permettant de vérifier si l'instance de la classe Segment qui appelle
-     * la méthode est plus grand que l'instance de la classe Segment en paramètre.
+     * Vérifie si le segment est plus long que le segment donné.
      *
-     * @param Segment $segment2 (optional) Instance de la classe Segment
+     * @param Segment $segment2 Le segment à comparer.
+     * @return bool Vrai si le segment est plus long, sinon faux.
      */
     public function isLongerThan(Segment $segment2) : bool
     {
@@ -112,11 +99,10 @@ class Segment
     }
 
     /**
-     * Méthode permettant de vérifier l'égalité entre les instances de la classe Point des
-     * instances de la classe Segment qui appelle la méthode et l'instance de la classe
-     * Segment en paramètre.
+     * Vérifie si le segment est égal au segment donné.
      *
-     * @param Segment $segment2 (optional) Instance de la classe Segment
+     * @param Segment $segment2 Le segment à comparer.
+     * @return bool Vrai si les segments sont égaux, sinon faux.
      */
     public function isEqual(Segment $segment2) : bool
     {
@@ -128,11 +114,21 @@ class Segment
     }
 
     /**
-     * Méthode permettant de cloner les attributs start et end d'une instance de classe Segment.
+     * Méthode de clonage du segment.
      */
     public function __clone()
     {
         $this->start = clone $this->start;
         $this->end = clone $this->end;
+    }
+
+    /**
+     * Retourne une représentation textuelle du segment.
+     *
+     * @return string La représentation textuelle du segment.
+     */
+    public function __toString() : string
+    {
+        return "[ $this->start - $this->end ]\n";
     }
 }

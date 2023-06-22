@@ -141,6 +141,66 @@ Search.appendIndex(
             "summary": "Effectue\u0020une\u0020pes\u00E9e\u0020al\u00E9atoire\u0020pour\u0020d\u00E9finir\u0020le\u0020poids\u0020de\u0020l\u0027article.",
             "url": "classes/WeighingTicket.html#method_weighing"
         },                {
+            "fqsen": "\\Segment",
+            "name": "Segment",
+            "summary": "",
+            "url": "classes/Segment.html"
+        },                {
+            "fqsen": "\\Segment\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "Constructeur\u0020de\u0020Segment.",
+            "url": "classes/Segment.html#method___construct"
+        },                {
+            "fqsen": "\\Segment\u003A\u003AgetStart\u0028\u0029",
+            "name": "getStart",
+            "summary": "Accesseur\u0020de\u0020la\u0020classe\u0020Segment.",
+            "url": "classes/Segment.html#method_getStart"
+        },                {
+            "fqsen": "\\Segment\u003A\u003AsetStart\u0028\u0029",
+            "name": "setStart",
+            "summary": "Modificateur\u0020de\u0020la\u0020classe\u0020Segment.",
+            "url": "classes/Segment.html#method_setStart"
+        },                {
+            "fqsen": "\\Segment\u003A\u003AgetEnd\u0028\u0029",
+            "name": "getEnd",
+            "summary": "Accesseur\u0020de\u0020la\u0020classe\u0020Segment.",
+            "url": "classes/Segment.html#method_getEnd"
+        },                {
+            "fqsen": "\\Segment\u003A\u003AsetEnd\u0028\u0029",
+            "name": "setEnd",
+            "summary": "Modificateur\u0020de\u0020la\u0020classe\u0020Segment.",
+            "url": "classes/Segment.html#method_setEnd"
+        },                {
+            "fqsen": "\\Segment\u003A\u003Atranslation\u0028\u0029",
+            "name": "translation",
+            "summary": "Effectue\u0020une\u0020translation\u0020du\u0020segment\u0020en\u0020d\u00E9pla\u00E7ant\u0020ses\u0020points\u0020de\u0020d\u00E9part\u0020et\u0020d\u0027arriv\u00E9e.",
+            "url": "classes/Segment.html#method_translation"
+        },                {
+            "fqsen": "\\Segment\u003A\u003AgetLength\u0028\u0029",
+            "name": "getLength",
+            "summary": "Calcule\u0020la\u0020longueur\u0020du\u0020segment.",
+            "url": "classes/Segment.html#method_getLength"
+        },                {
+            "fqsen": "\\Segment\u003A\u003AisLongerThan\u0028\u0029",
+            "name": "isLongerThan",
+            "summary": "V\u00E9rifie\u0020si\u0020le\u0020segment\u0020est\u0020plus\u0020long\u0020que\u0020le\u0020segment\u0020donn\u00E9.",
+            "url": "classes/Segment.html#method_isLongerThan"
+        },                {
+            "fqsen": "\\Segment\u003A\u003AisEqual\u0028\u0029",
+            "name": "isEqual",
+            "summary": "V\u00E9rifie\u0020si\u0020le\u0020segment\u0020est\u0020\u00E9gal\u0020au\u0020segment\u0020donn\u00E9.",
+            "url": "classes/Segment.html#method_isEqual"
+        },                {
+            "fqsen": "\\Segment\u003A\u003A__clone\u0028\u0029",
+            "name": "__clone",
+            "summary": "M\u00E9thode\u0020de\u0020clonage\u0020du\u0020segment.",
+            "url": "classes/Segment.html#method___clone"
+        },                {
+            "fqsen": "\\Segment\u003A\u003A__toString\u0028\u0029",
+            "name": "__toString",
+            "summary": "Retourne\u0020une\u0020repr\u00E9sentation\u0020textuelle\u0020du\u0020segment.",
+            "url": "classes/Segment.html#method___toString"
+        },                {
             "fqsen": "\\",
             "name": "\\",
             "summary": "",
