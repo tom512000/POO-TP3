@@ -51,6 +51,36 @@ Search.appendIndex(
             "summary": "Retourne\u0020une\u0020repr\u00E9sentation\u0020textuelle\u0020de\u0020la\u0020personne.",
             "url": "classes/Person.html#method___toString"
         },                {
+            "fqsen": "\\Point",
+            "name": "Point",
+            "summary": "",
+            "url": "classes/Point.html"
+        },                {
+            "fqsen": "\\Point\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "Constructeur\u0020de\u0020la\u0020classe\u0020Point.",
+            "url": "classes/Point.html#method___construct"
+        },                {
+            "fqsen": "\\Point\u003A\u003AgetX\u0028\u0029",
+            "name": "getX",
+            "summary": "Accesseur\u0020de\u0020la\u0020classe\u0020Point.",
+            "url": "classes/Point.html#method_getX"
+        },                {
+            "fqsen": "\\Point\u003A\u003AgetY\u0028\u0029",
+            "name": "getY",
+            "summary": "Accesseur\u0020de\u0020la\u0020classe\u0020Point.",
+            "url": "classes/Point.html#method_getY"
+        },                {
+            "fqsen": "\\Point\u003A\u003A__toString\u0028\u0029",
+            "name": "__toString",
+            "summary": "Obtient\u0020une\u0020repr\u00E9sentation\u0020sous\u0020forme\u0020de\u0020cha\u00EEne\u0020de\u0020caract\u00E8res\u0020du\u0020point.",
+            "url": "classes/Point.html#method___toString"
+        },                {
+            "fqsen": "\\Point\u003A\u003Atranslation\u0028\u0029",
+            "name": "translation",
+            "summary": "Effectue\u0020une\u0020translation\u0020du\u0020point\u0020en\u0020ajoutant\u0020les\u0020d\u00E9placements\u0020sp\u00E9cifi\u00E9s.",
+            "url": "classes/Point.html#method_translation"
+        },                {
             "fqsen": "\\",
             "name": "\\",
             "summary": "",

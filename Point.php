@@ -1,4 +1,5 @@
 <?php
+
 declare(strict_types=1);
 
 class Point
@@ -7,12 +8,10 @@ class Point
     private float $y;
 
     /**
-     * Constructeur de la classe Point. Ce constructeur permet d’affecter une coordonnée
-     * x et y à un point. Lorsque ces caractéritiques ne sont pas renseignées lors de
-     * l’appel du contructeur, Le point aura pour coordonnée x 0 et y 0.
+     * Constructeur de la classe Point.
      *
-     * @param float $x (optional) Coordonnée x du point
-     * @param float $y (optional) Coordonnée y du point
+     * @param float $x Coordonnée X du point (par défaut : 0).
+     * @param float $y Coordonnée Y du point (par défaut : 0).
      */
     public function __construct (float $x = 0, float $y = 0)
     {
@@ -21,10 +20,9 @@ class Point
     }
 
     /**
-     * Accesseur à la coordonnée x du point. Retourne la valeur de la coordonnée x sous forme
-     * de nombre à virgule.
+     * Accesseur de la classe Point.
      *
-     * @return float Coordonnée x du point
+     * @return float Coordonnée X du point.
      */
     public function getX() : float
     {
@@ -32,10 +30,9 @@ class Point
     }
 
     /**
-     * Accesseur à la coordonnée y du point. Retourne la valeur de la coordonnée y sous forme
-     * de nombre à virgule.
+     * Accesseur de la classe Point.
      *
-     * @return float Coordonnée y du point
+     * @return float Coordonnée Y du point.
      */
     public function getY() : float
     {
@@ -43,10 +40,9 @@ class Point
     }
 
     /**
-     * Affichage des attributs du point. Retourne une chaîne de caractères composée
-     * de la coordonnée x et la coordonnée y du point.
+     * Obtient une représentation sous forme de chaîne de caractères du point.
      *
-     * @return string Attributs du point
+     * @return string Représentation du point sous forme de chaîne de caractères.
      */
     public function __toString() : string
     {
@@ -54,10 +50,11 @@ class Point
     }
 
     /**
-     * Méthode permettant de modifier la coordonnée x et y du point.
+     * Effectue une translation du point en ajoutant les déplacements spécifiés.
      *
-     * @param float $dx (optional) Coordonnée x du point
-     * @param float $dy (optional) Coordonnée y du point
+     * @param float $dx Déplacement en X.
+     * @param float $dy Déplacement en Y.
+     * @return void
      */
     public function translation(float $dx, float $dy) : void
     {
