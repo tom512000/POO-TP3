@@ -1,4 +1,5 @@
 <?php
+
 declare(strict_types=1);
 
 class Person
@@ -8,26 +9,13 @@ class Person
     private int $age;
 
     /**
-     * Affichage des attributs de la personne.
+     * Constructeur de la classe Person.
      *
+     * @param string $lastName Le nom de famille de la personne (par défaut: 'Doe').
+     * @param string $firstName Le prénom de la personne (par défaut: 'John').
+     * @param int $age L'âge de la personne (par défaut: 0).
      */
-    public function print() : void
-    {
-        echo "Nom : {$this->lastName}\n";
-        echo "Prenom : {$this->firstName}\n";
-        echo "Age : {$this->age}\n" ;
-    }
-
-    /**
-     * Constructeur de la classe Person. Ce constructeur permet d’affecter un nom, un prénom
-     * et un age à une personne. Lorsque ces caractéritiques ne sont pas renseignées lors de
-     * l’appel du contructeur, la personne aura pour nom "Doe", prénom "John" et age 0.
-     *
-     * @param string $lastName (optional) Nom de la personne
-     * @param string $firstName (optional) Prénom de la personne
-     * @param int $age (optional) Age de la personne
-     */
-    public function __construct (string $lastName = 'Doe', string $firstName = 'John', int $age = 0)
+    public function __construct(string $lastName = 'Doe', string $firstName = 'John', int $age = 0)
     {
         $this->lastName = $lastName;
         $this->firstName = $firstName;
@@ -35,10 +23,9 @@ class Person
     }
 
     /**
-     * Accesseur au nom de la personne. Retourne la valeur du nom sous forme de chaîne de
-     * caractères.
+     * Accesseur de la classe Person.
      *
-     * @return string Nom de la personne
+     * @return string Le nom de famille de la personne sous forme de chaîne de caractères.
      */
     public function getLastName() : string
     {
@@ -46,51 +33,9 @@ class Person
     }
 
     /**
-     * Accesseur au prénom de la personne. Retourne la valeur du prénom sous forme de chaîne de
-     * caractères.
+     * Modificateur de la classe Person.
      *
-     * @return string Prénom de la personne
-     */
-    public function getFirstName() : string
-    {
-        return $this->firstName;
-    }
-
-    /**
-     * Accesseur à l'âge de la personne. Retourne la valeur de l'âge sous forme de chaîne de
-     * caractères.
-     *
-     * @return int Age de la personne
-     */
-    public function getAge() : int
-    {
-        return $this->age;
-    }
-
-    /**
-     * Modificateur à l'âge de la personne. Permet d’affecter un nouvel âge à la personne.
-     *
-     * @param int $age Age de la personne
-     */
-    public function setAge(int $age) : void
-    {
-        $this->age = $age;
-    }
-
-    /**
-     * Modificateur au prénom de la personne. Permet d’affecter un nouveau prénom à la personne.
-     *
-     * @param string $firstName Prénom de la personne
-     */
-    public function setFirstName(string $firstName) : void
-    {
-        $this->firstName = $firstName;
-    }
-
-    /**
-     * Modificateur au nom de la personne. Permet d’affecter un nouveau nom à la personne.
-     *
-     * @param string $lastName Nom de la personne
+     * @param string $lastName Le nouveau nom de famille de la personne sous forme de chaîne de caractères.
      */
     public function setLastName(string $lastName) : void
     {
@@ -98,17 +43,65 @@ class Person
     }
 
     /**
-     * Affichage des attributs de la personne. Retourne une chaîne de caractères composée du nom, prénom et âge de
-     * la personne.
+     * Accesseur de la classe Person.
      *
-     * @return string Attributs de personne
+     * @return string Le prénom de la personne sous forme de chaîne de caractères.
+     */
+    public function getFirstName() : string
+    {
+        return $this->firstName;
+    }
+
+    /**
+     * Modificateur de la classe Person.
+     *
+     * @param string $firstName Le nouveau prénom de la personne sous forme de chaîne de caractères.
+     */
+    public function setFirstName(string $firstName) : void
+    {
+        $this->firstName = $firstName;
+    }
+
+    /**
+     * Accesseur de la classe Person.
+     *
+     * @return int L'âge de la personne sous forme d'entier.
+     */
+    public function getAge() : int
+    {
+        return $this->age;
+    }
+
+    /**
+     * Modificateur de la classe Person.
+     *
+     * @param int $age Le nouvel âge de la personne sous forme d'entier.
+     */
+    public function setAge(int $age) : void
+    {
+        $this->age = $age;
+    }
+
+    /**
+     * Affiche les informations de la personne.
+     */
+    public function print() : void
+    {
+        echo "Nom : {$this->lastName}\n";
+        echo "Prenom : {$this->firstName}\n";
+        echo "Age : {$this->age}\n";
+    }
+
+    /**
+     * Retourne une représentation textuelle de la personne.
+     *
+     * @return string La représentation textuelle de la personne.
      */
     public function __toString() : string
     {
         $res = "Nom : {$this->lastName}\n";
         $res = $res."Prenom : {$this->firstName}\n";
-        $res = $res."Age : {$this->age}" ;
+        $res = $res."Age : {$this->age}";
         return $res;
     }
-
 }

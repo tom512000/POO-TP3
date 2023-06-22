@@ -51,6 +51,21 @@ Search.appendIndex(
             "summary": "Retourne\u0020une\u0020repr\u00E9sentation\u0020textuelle\u0020de\u0020la\u0020personne.",
             "url": "classes/Person.html#method___toString"
         },                {
+            "fqsen": "\\Person\u003A\u003A\u0024lastName",
+            "name": "lastName",
+            "summary": "",
+            "url": "classes/Person.html#property_lastName"
+        },                {
+            "fqsen": "\\Person\u003A\u003A\u0024firstName",
+            "name": "firstName",
+            "summary": "",
+            "url": "classes/Person.html#property_firstName"
+        },                {
+            "fqsen": "\\Person\u003A\u003A\u0024age",
+            "name": "age",
+            "summary": "",
+            "url": "classes/Person.html#property_age"
+        },                {
             "fqsen": "\\",
             "name": "\\",
             "summary": "",
