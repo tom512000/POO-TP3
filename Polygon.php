@@ -43,15 +43,19 @@ class Polygon
     /**
      * Calcule le périmètre du polygone.
      *
-     * @return int Le périmètre du polygone.
+     * @return float Le périmètre du polygone.
      */
-    public function getPerimeter() : int
+    public function getPerimeter() : float
     {
-        $res = 0;
-        $array = $this->vertices;
-        foreach ($array as $value) {
-            $res += round(sqrt((($value->end->getX() - $value->start->getX())**2) + (($value->end->getY() - $value->start->getY())**2)), 2);
+        $perimeter = 0;
+
+        for ($i = 0; $i < count($this->vertices); $i++) {
+            $currentVertex = $this->vertices[$i];
+            $nextVertex = $this->vertices[($i + 1) % count($this->vertices)];
+            $dx = $nextVertex->getX() - $currentVertex->getX();
+            $dy = $nextVertex->getY() - $currentVertex->getY();
+            $perimeter += sqrt($dx ** 2 + $dy ** 2);
         }
-        return $res;
+        return $perimeter;
     }
 }

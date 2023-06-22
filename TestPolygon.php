@@ -1,5 +1,7 @@
 <?php
+
 declare(strict_types=1);
+
 require_once "Point.php";
 require_once "Segment.php";
 require_once "Polygon.php";
@@ -12,10 +14,23 @@ $point4 = new Point(0, 10);
 $polygon = new Polygon(array($point1, $point2, $point3, $point4));
 
 # Question 2
-echo $polygon->getVerticesNumber();
+echo $polygon->getVerticesNumber()."\n";
+echo "\n";
 
 # Question 3
-echo $polygon->isEmpty();
+function decodeBooleen(bool $bool): string
+{
+    $res = "True";
+    if (!$bool) {
+        $res = "False";
+    }
+    return $res;
+}
+echo decodeBooleen($polygon->isEmpty())."\n";
+echo "\n";
 
 # Question 4
-echo $polygon->getPerimeter();
+echo $polygon->getPerimeter()."\n";
+echo "\n";
+
+# Question 5
