@@ -81,6 +81,66 @@ Search.appendIndex(
             "summary": "Effectue\u0020une\u0020translation\u0020du\u0020point\u0020en\u0020ajoutant\u0020les\u0020d\u00E9placements\u0020sp\u00E9cifi\u00E9s.",
             "url": "classes/Point.html#method_translation"
         },                {
+            "fqsen": "\\WeighingTicket",
+            "name": "WeighingTicket",
+            "summary": "",
+            "url": "classes/WeighingTicket.html"
+        },                {
+            "fqsen": "\\WeighingTicket\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "Constructeur\u0020de\u0020WeighingTicket.",
+            "url": "classes/WeighingTicket.html#method___construct"
+        },                {
+            "fqsen": "\\WeighingTicket\u003A\u003AgetArticleName\u0028\u0029",
+            "name": "getArticleName",
+            "summary": "Accesseur\u0020de\u0020la\u0020classe\u0020WeighingTicket.",
+            "url": "classes/WeighingTicket.html#method_getArticleName"
+        },                {
+            "fqsen": "\\WeighingTicket\u003A\u003AsetArticleName\u0028\u0029",
+            "name": "setArticleName",
+            "summary": "Modificateur\u0020de\u0020la\u0020classe\u0020WeighingTicket.",
+            "url": "classes/WeighingTicket.html#method_setArticleName"
+        },                {
+            "fqsen": "\\WeighingTicket\u003A\u003AgetPricePerKilogram\u0028\u0029",
+            "name": "getPricePerKilogram",
+            "summary": "Accesseur\u0020de\u0020la\u0020classe\u0020WeighingTicket.",
+            "url": "classes/WeighingTicket.html#method_getPricePerKilogram"
+        },                {
+            "fqsen": "\\WeighingTicket\u003A\u003AsetPricePerKilogram\u0028\u0029",
+            "name": "setPricePerKilogram",
+            "summary": "Modificateur\u0020de\u0020la\u0020classe\u0020WeighingTicket.",
+            "url": "classes/WeighingTicket.html#method_setPricePerKilogram"
+        },                {
+            "fqsen": "\\WeighingTicket\u003A\u003AgetWeight\u0028\u0029",
+            "name": "getWeight",
+            "summary": "Accesseur\u0020de\u0020la\u0020classe\u0020WeighingTicket.",
+            "url": "classes/WeighingTicket.html#method_getWeight"
+        },                {
+            "fqsen": "\\WeighingTicket\u003A\u003AsetWeight\u0028\u0029",
+            "name": "setWeight",
+            "summary": "Modificateur\u0020de\u0020la\u0020classe\u0020WeighingTicket.",
+            "url": "classes/WeighingTicket.html#method_setWeight"
+        },                {
+            "fqsen": "\\WeighingTicket\u003A\u003AgetPrice\u0028\u0029",
+            "name": "getPrice",
+            "summary": "Accesseur\u0020de\u0020la\u0020classe\u0020WeighingTicket.",
+            "url": "classes/WeighingTicket.html#method_getPrice"
+        },                {
+            "fqsen": "\\WeighingTicket\u003A\u003Aprint\u0028\u0029",
+            "name": "print",
+            "summary": "Affiche\u0020les\u0020d\u00E9tails\u0020de\u0020l\u0027article.",
+            "url": "classes/WeighingTicket.html#method_print"
+        },                {
+            "fqsen": "\\WeighingTicket\u003A\u003A__toString\u0028\u0029",
+            "name": "__toString",
+            "summary": "Retourne\u0020une\u0020repr\u00E9sentation\u0020textuelle\u0020de\u0020l\u0027article.",
+            "url": "classes/WeighingTicket.html#method___toString"
+        },                {
+            "fqsen": "\\WeighingTicket\u003A\u003Aweighing\u0028\u0029",
+            "name": "weighing",
+            "summary": "Effectue\u0020une\u0020pes\u00E9e\u0020al\u00E9atoire\u0020pour\u0020d\u00E9finir\u0020le\u0020poids\u0020de\u0020l\u0027article.",
+            "url": "classes/WeighingTicket.html#method_weighing"
+        },                {
             "fqsen": "\\",
             "name": "\\",
             "summary": "",
