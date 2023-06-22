@@ -201,6 +201,31 @@ Search.appendIndex(
             "summary": "Retourne\u0020une\u0020repr\u00E9sentation\u0020textuelle\u0020du\u0020segment.",
             "url": "classes/Segment.html#method___toString"
         },                {
+            "fqsen": "\\Polygon",
+            "name": "Polygon",
+            "summary": "",
+            "url": "classes/Polygon.html"
+        },                {
+            "fqsen": "\\Polygon\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "Constructeur\u0020de\u0020Polygon.",
+            "url": "classes/Polygon.html#method___construct"
+        },                {
+            "fqsen": "\\Polygon\u003A\u003AgetVerticesNumber\u0028\u0029",
+            "name": "getVerticesNumber",
+            "summary": "Accesseur\u0020de\u0020la\u0020classe\u0020Polygon.",
+            "url": "classes/Polygon.html#method_getVerticesNumber"
+        },                {
+            "fqsen": "\\Polygon\u003A\u003AisEmpty\u0028\u0029",
+            "name": "isEmpty",
+            "summary": "V\u00E9rifie\u0020si\u0020le\u0020polygone\u0020est\u0020vide\u0020\u0028sans\u0020sommets\u0029.",
+            "url": "classes/Polygon.html#method_isEmpty"
+        },                {
+            "fqsen": "\\Polygon\u003A\u003AgetPerimeter\u0028\u0029",
+            "name": "getPerimeter",
+            "summary": "Calcule\u0020le\u0020p\u00E9rim\u00E8tre\u0020du\u0020polygone.",
+            "url": "classes/Polygon.html#method_getPerimeter"
+        },                {
             "fqsen": "\\",
             "name": "\\",
             "summary": "",
