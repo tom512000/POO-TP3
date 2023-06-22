@@ -1,27 +1,31 @@
 <?php
+
 declare(strict_types = 1);
+
 require_once "WeighingTicket.php";
 
 # Question 2
 $inconnu = new WeighingTicket;
-$inconnu -> print();
+$inconnu->print();
 $carotte = new WeighingTicket("Carotte");
-$carotte -> print();
+$carotte->print();
 $concombre = new WeighingTicket("Concombre",0.99);
-$concombre -> print();
+$concombre->print();
 $pommeDT = new WeighingTicket("Pomme de Terre",1.5,3000);
-$pommeDT -> print();
+$pommeDT->print();
+echo "\n";
 
 # Question 3
 # Non car le dernier attribut price est un attribut calculé.
 # Il dépend donc du prix au kilogramme et du poids.
 
 # Question 4
-echo "Attributs de l'objet pommeDT : \n";
+echo "Attributs de l'objet pommeDT :\n";
 echo "Nom : {$pommeDT->getArticleName()}\n";
 echo "Prix au kilo : {$pommeDT->getPricePerKilogram()}\n";
 echo "Poids : {$pommeDT->getWeight()}\n";
 echo "Prix : {$pommeDT->getPrice()}\n";
+echo "\n";
 
 # Question 5
 # Non, car l'attribut price dépend de 2 autres attributs (poids et prix au kilo).
