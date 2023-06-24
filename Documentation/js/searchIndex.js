@@ -226,6 +226,21 @@ Search.appendIndex(
             "summary": "Calcule\u0020le\u0020p\u00E9rim\u00E8tre\u0020du\u0020polygone.",
             "url": "classes/Polygon.html#method_getPerimeter"
         },                {
+            "fqsen": "\\Polygon\u003A\u003AinsertPoint\u0028\u0029",
+            "name": "insertPoint",
+            "summary": "Ins\u00E8re\u0020un\u0020nouveau\u0020point\u0020dans\u0020le\u0020tableau\u0020vertices\u0020\u00E0\u0020la\u0020position\u0020indice.",
+            "url": "classes/Polygon.html#method_insertPoint"
+        },                {
+            "fqsen": "\\Polygon\u003A\u003A__toString\u0028\u0029",
+            "name": "__toString",
+            "summary": "Retourne\u0020une\u0020repr\u00E9sentation\u0020sous\u0020forme\u0020de\u0020cha\u00EEne\u0020de\u0020caract\u00E8res\u0020du\u0020polygone.",
+            "url": "classes/Polygon.html#method___toString"
+        },                {
+            "fqsen": "\\Polygon\u003A\u003AisEqual\u0028\u0029",
+            "name": "isEqual",
+            "summary": "V\u00E9rifie\u0020si\u0020deux\u0020polygones\u0020sont\u0020\u00E9gaux.",
+            "url": "classes/Polygon.html#method_isEqual"
+        },                {
             "fqsen": "\\",
             "name": "\\",
             "summary": "",

@@ -58,4 +58,81 @@ class Polygon
         }
         return $perimeter;
     }
+
+    /**
+     * Insère un nouveau point dans le tableau vertices à la position indice.
+     *
+     * @param Point $newPoint Le nouveau point à insérer.
+     * @param int $index L'indice où insérer le point.
+     * @return bool Vrai si l'insertion a réussi, sinon faux.
+     */
+    public function insertPoint(Point $newPoint, int $index) : bool
+    {
+        $res = false;
+
+        if ($index >= 0 && $index <= count($this->vertices)) {
+            for ($i = count($this->vertices)-1; $i >= $index; $i--) {
+                $this->vertices[$i+1] = $this->vertices[$i];
+            }
+
+            $this->vertices[$index] = $newPoint;
+            $res = true;
+        }
+
+        return $res;
+    }
+
+    /**
+     * Retourne une représentation sous forme de chaîne de caractères du polygone.
+     *
+     * @return string La représentation du polygone.
+     */
+    public function __toString() : string
+    {
+        $res = "Polygon:\n";
+        $index = 1;
+
+        foreach ($this->vertices as $point) {
+            $res .= "  Point n°$index : $point\n";
+            $index++;
+        }
+
+        return $res;
+    }
+
+    /**
+     * Vérifie si deux polygones sont égaux.
+     *
+     * @param Polygon $polygon Le polygone à comparer.
+     * @return bool Vrai si les polygones sont égaux, sinon faux.
+     */
+    public function isEqual(Polygon $polygon) : bool
+    {
+        $res = true;
+        $vertices1 = $this->vertices;
+        $vertices2 = $polygon->vertices;
+    
+        if (count($vertices1) !== count($vertices2)) {
+            $res = false;
+        } else {
+            $startIndex = array_search($vertices2[0], $vertices1);
+    
+            if ($startIndex === false) {
+                $res = false;
+            } else {
+                $n = count($vertices1);
+                for ($i = 0; $i < $n; $i++) {
+                    $index1 = ($startIndex + $i) % $n;
+                    $index2 = $i;
+    
+                    if ($vertices1[$index1] != $vertices2[$index2]) {
+                        $res = false;
+                        break;
+                    }
+                }
+            }
+        }
+    
+        return $res;
+    }
 }
