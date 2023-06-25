@@ -19,6 +19,8 @@
 
 <h2>Documentation</h2>
 
+[Documentation des classes](Documentation/index.html)
+
 ```php dossier/phpDocumentor.phar -t Documentation --visibility public -f classe```
 
 <br>
