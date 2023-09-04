@@ -11,9 +11,9 @@
 
 > Buts : L’objectif de ce sujet est d’implémenter des classes simples en préservant le principe d’encapsulation des données.
 >
-> [PDF - TP3](TP3_POO.pdf)
+> [PDF - TP3](files/TP3_POO.pdf)
 >
-> [PDF - TP3 Complémentaire](TP3_POO_Complementaire.pdf)
+> [PDF - TP3 Complémentaire](files/TP3_POO_Complementaire.pdf)
 
 <br>
 
@@ -38,7 +38,7 @@
     <br>
     <br>
     <div>
-        <sub>&copy; 2023 Tom Sikora. Tous droits réservés.</sub>
+        <sub>Copyright &copy; 2023 Tom Sikora. Tous droits reservés.</sub>
     </div>
     <br>
     👨‍💻
